@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/checkfio', [FIOController::class, 'checkFIO']);
+Route::post('/savefio', [FIOController::class, 'saveFIO']);
