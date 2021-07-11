@@ -32,7 +32,7 @@ class FIOController extends Controller
     {
         $checkFIO = $this->checkFIO($request);
 
-        if(json_decode($checkFIO)->success !== true) {
+        if(json_decode($checkFIO)->success === false) {
             return $checkFIO;
         }
 
